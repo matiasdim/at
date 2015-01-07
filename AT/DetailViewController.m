@@ -18,18 +18,17 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.first.text = [self.detailDictionary objectForKey:@"first"];
+    self.last.text = [self.detailDictionary objectForKey:@"last"];
     self.email.text = [self.detailDictionary objectForKey:@"email"];
     self.organization.text = [self.detailDictionary objectForKey:@"organization"];
     self.postalCode.text = [self.detailDictionary objectForKey:@"postalCode"];
     self.contactTitle.text = [self.detailDictionary objectForKey:@"title"];
+
     
-    
-    self.attList0.text = [[(NSArray *)[self.detailDictionary objectForKey:@"attrList"] objectAtIndex:0] objectForKey:@"name"];
-    self.attList0Val.text = [[(NSArray *)[self.detailDictionary objectForKey:@"attrList"] objectAtIndex:0] objectForKey:@"val"];
-    self.attList1.text = [[(NSArray *)[self.detailDictionary objectForKey:@"attrList"] objectAtIndex:1] objectForKey:@"name"];
-    self.attList1Val.text = [[(NSArray *)[self.detailDictionary objectForKey:@"attrList"] objectAtIndex:1] objectForKey:@"val"];
-    self.attList2.text = [[(NSArray *)[self.detailDictionary objectForKey:@"attrList"] objectAtIndex:2] objectForKey:@"name"];
-    self.attList2val.text = [[(NSArray *)[self.detailDictionary objectForKey:@"attrList"] objectAtIndex:2] objectForKey:@"val"];
+
+    self.attList0Val.text = [self.detailDictionary objectForKey:@"address1"];
+    self.attList1Val.text = [self.detailDictionary objectForKey:@"city"];
+    self.attList2val.text = [self.detailDictionary objectForKey:@"country"];
     
     
 }

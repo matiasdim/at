@@ -17,13 +17,11 @@
 @property (weak, nonatomic) IBOutlet UILabel *organization;
 @property (weak, nonatomic) IBOutlet UILabel *postalCode;
 @property (weak, nonatomic) IBOutlet UILabel *contactTitle;
+@property (weak, nonatomic) IBOutlet UILabel *last;
 
 
-@property (weak, nonatomic) IBOutlet UILabel *attList0;
 @property (weak, nonatomic) IBOutlet UILabel *attList0Val;
-@property (weak, nonatomic) IBOutlet UILabel *attList1;
 @property (weak, nonatomic) IBOutlet UILabel *attList1Val;
-@property (weak, nonatomic) IBOutlet UILabel *attList2;
 @property (weak, nonatomic) IBOutlet UILabel *attList2val;
 
 

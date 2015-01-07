@@ -230,4 +230,6 @@ NSDictionary * detailDictionary;
     detailVC.detailDictionary = detailDictionary;
 }
 
+- (IBAction)refreshData:(id)sender {
+}
 @end
