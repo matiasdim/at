@@ -149,6 +149,22 @@ NSDictionary * detailDictionary;
     
 */
     
+    [self getData];
+    
+    
+    //[requestOperation start];
+     
+
+    
+
+}
+
+
+- (IBAction)refreshData:(id)sender{
+    [self getData];
+}
+
+-(void) getData{
     [[AuthManager sharedManager] setUsername:@"mobiletest@alliancetech.com" andPassword:@"mtAlliancetech1*"];
     
     [[AuthManager sharedManager] GET:@"/restapi/registration" parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
@@ -163,13 +179,6 @@ NSDictionary * detailDictionary;
                                                   otherButtonTitles:nil];
         [alertView show];
     }];
-    
-    
-    
-    //[requestOperation start];
-     
-
-    
 
 }
 
@@ -230,6 +239,5 @@ NSDictionary * detailDictionary;
     detailVC.detailDictionary = detailDictionary;
 }
 
-- (IBAction)refreshData:(id)sender {
-}
+
 @end

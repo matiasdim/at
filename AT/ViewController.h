@@ -16,7 +16,7 @@
 @property (nonatomic) NSDictionary *contactsDictionary;
 @property (nonatomic,retain) NSMutableArray *tableData;
 
-- (IBAction)refreshData:(id)sender;
 
+- (IBAction)refreshData:(id)sender;
 @end
 
