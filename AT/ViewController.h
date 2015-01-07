@@ -7,8 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "AFNetworking.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
+
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
+
+@property (nonatomic) NSDictionary *contactsDictionary;
+@property (nonatomic,retain) NSMutableArray *tableData;
 
 
 @end
