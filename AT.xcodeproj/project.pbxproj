@@ -32,6 +32,7 @@
 		ECD9BD6A1A5CA8C100F7D172 /* UIRefreshControl+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = ECD9BD581A5CA8C100F7D172 /* UIRefreshControl+AFNetworking.m */; };
 		ECD9BD6B1A5CA8C100F7D172 /* UIWebView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = ECD9BD5A1A5CA8C100F7D172 /* UIWebView+AFNetworking.m */; };
 		ECD9BD6E1A5CB3B300F7D172 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECD9BD6D1A5CB3B300F7D172 /* DetailViewController.m */; };
+		ECD9BD711A5CC4BB00F7D172 /* AuthManager.m in Sources */ = {isa = PBXBuildFile; fileRef = ECD9BD701A5CC4BB00F7D172 /* AuthManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,6 +97,8 @@
 		ECD9BD5A1A5CA8C100F7D172 /* UIWebView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+AFNetworking.m"; sourceTree = "<group>"; };
 		ECD9BD6C1A5CB3B300F7D172 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		ECD9BD6D1A5CB3B300F7D172 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		ECD9BD6F1A5CC4BB00F7D172 /* AuthManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AuthManager.h; sourceTree = "<group>"; };
+		ECD9BD701A5CC4BB00F7D172 /* AuthManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AuthManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +147,8 @@
 				ECD9BD161A5C9D8500F7D172 /* ViewController.m */,
 				ECD9BD6C1A5CB3B300F7D172 /* DetailViewController.h */,
 				ECD9BD6D1A5CB3B300F7D172 /* DetailViewController.m */,
+				ECD9BD6F1A5CC4BB00F7D172 /* AuthManager.h */,
+				ECD9BD701A5CC4BB00F7D172 /* AuthManager.m */,
 				ECD9BD181A5C9D8500F7D172 /* Main.storyboard */,
 				ECD9BD1B1A5C9D8500F7D172 /* Images.xcassets */,
 				ECD9BD1D1A5C9D8500F7D172 /* LaunchScreen.xib */,
@@ -346,6 +351,7 @@
 				ECD9BD621A5CA8C100F7D172 /* AFURLResponseSerialization.m in Sources */,
 				ECD9BD601A5CA8C100F7D172 /* AFURLConnectionOperation.m in Sources */,
 				ECD9BD671A5CA8C100F7D172 /* UIButton+AFNetworking.m in Sources */,
+				ECD9BD711A5CC4BB00F7D172 /* AuthManager.m in Sources */,
 				ECD9BD651A5CA8C100F7D172 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
 				ECD9BD5F1A5CA8C100F7D172 /* AFSecurityPolicy.m in Sources */,
 				ECD9BD6A1A5CA8C100F7D172 /* UIRefreshControl+AFNetworking.m in Sources */,

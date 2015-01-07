@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "DetailViewController.h"
+#import "AuthManager.h"
 
 @interface ViewController ()
 
@@ -21,6 +22,8 @@ NSDictionary * detailDictionary;
 - (void)viewDidLoad {
     [super viewDidLoad];
  
+    /*
+     
     self.contactsDictionary = @{@"registrantList":@[@{
                                                         @"attrList":@[@{@"name":@"Attendee Type", @"val":@"Customer"},@{@"name":@"Attendee Status",@"val":@"Pending"},@{@"name":@"Country", @"val":@"United States"}],
                                                         @"optInAttendeeSearch":@false,
@@ -120,9 +123,9 @@ NSDictionary * detailDictionary;
     
     self.tableData = [self.contactsDictionary objectForKey:@"registrantList"]; //[[NSMutableArray alloc] initWithObjects:@"One",@"Two",@"Three",@"Four",@"Five",@"Six",@"Seven",@"Eight",@"Nine",@"Ten", nil];
     
+  */
   
-  
-    /*
+/*
     NSURL *url = [NSURL URLWithString:BASEURL];
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
     
@@ -144,10 +147,29 @@ NSDictionary * detailDictionary;
         [alertView show];
     }];
     
-    [requestOperation start];
+*/
+    
+    [[AuthManager sharedManager] setUsername:@"mobiletest@alliancetech.com" andPassword:@"mtAlliancetech1*"];
+    
+    [[AuthManager sharedManager] GET:@"/restapi/registration" parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        self.contactsDictionary = (NSDictionary *)responseObject;
+        self.tableData = [self.contactsDictionary objectForKey:@"registrantList"];
+        [self.tableView reloadData];
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"There was an error, try again please!"
+                                                            message:[error localizedDescription]
+                                                           delegate:nil
+                                                  cancelButtonTitle:@"Ok"
+                                                  otherButtonTitles:nil];
+        [alertView show];
+    }];
+    
+    
+    
+    //[requestOperation start];
      
-     
-     */
+
+    
 
 }
 
